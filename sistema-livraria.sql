@@ -28,3 +28,8 @@ VALUES
     (3, 3, '1984'),
     (4, 1, 'Cem Anos de Solidão');
 
+SELECT Clientes.nomeCliente, Compras.NomeLivro
+FROM Compras
+INNER JOIN Clientes ON Compras.ClienteID = Clientes.ID;
+
+
